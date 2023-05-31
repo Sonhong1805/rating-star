@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.rating {
+    display: inline-block;
+  }
+
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ddd;
+  }
+
+  .rating label.pink {
+    float: right;
+    cursor: pointer;
+    color: pink;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 80px;
+  }
+  
+  .rating input:checked ~ label {
+    color: #ffc107;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #ffc107;
+  }
+  
+
